@@ -1,4 +1,5 @@
 import { GitHubUserEntity } from "../entities";
+import { InvalidUsername } from "../errors";
 import { GetGitHubUserRepository } from "../repositories";
 
 export type GetGitHubUserDTO = {
@@ -12,8 +13,7 @@ export class GetGitHubUserUsecase {
     const { username } = params;
 
     if (!username) {
-      // TODO: add semantic errors (those are business rules errors)
-      throw new Error("Username is not valid");
+      throw new InvalidUsername("Username is not valid");
     }
     return await this.usecase.getGitHubUser(params);
   }
