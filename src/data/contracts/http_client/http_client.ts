@@ -1,2 +1,3 @@
-export interface HttpClient { 
+export interface HttpClient {
+
 }
