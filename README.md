@@ -4,8 +4,8 @@
 
 A simple web application for searching GitHub users written in NodeJS, Typescript and React.
 
-My main goal with this project is to build an simple app for applying some architectural concepts heavily inspired on Robert C. Martin Clean 
-Architecture. It is very similar to other implementations of Clean Architecture, but I'm
+My main goal with this project is to build an simple app for applying some architectural concepts heavily inspired on Robert C. Martin's
+Clean Architecture. It is very similar to other implementations of Clean Architecture, but I'm
 putting together some of my ideas about this architecture.
 
 ## References
