@@ -1,1 +1,1 @@
-export * from "./get_github_user_repository";
+export * from "./get_github_user.repository";

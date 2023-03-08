@@ -1,1 +1,1 @@
-export * from "./get_github_user";
+export * from "./get_github_user.usecase";

@@ -1,1 +1,1 @@
-export * from "./http_client";
+export * from "./http_client.contract";

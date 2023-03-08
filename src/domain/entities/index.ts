@@ -1,1 +1,1 @@
-export * from "./github_user";
+export * from "./github_user.entity";
