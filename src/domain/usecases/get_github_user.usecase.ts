@@ -1,5 +1,5 @@
 import { GitHubUserEntity } from "../entities";
-import { InvalidUsername } from "../errors";
+import { InvalidUsername } from "../failures";
 import { GetGitHubUserRepository } from "../repositories";
 
 export type GetGitHubUserDTO = {

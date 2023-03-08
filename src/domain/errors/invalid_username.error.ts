@@ -1,1 +1,0 @@
-export class InvalidUsername extends Error {}
