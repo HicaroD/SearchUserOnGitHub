@@ -1,5 +1,5 @@
 import { GitHubUserEntity } from "../entities";
-import { InvalidUsername } from "../failures";
+import { InvalidUsernameFailure } from "../failures";
 import { GetGitHubUserRepository } from "../repositories";
 
 export type GetGitHubUserDTO = {
@@ -13,7 +13,7 @@ export class GetGitHubUserUsecase {
     const { username } = params;
 
     if (!username) {
-      throw new InvalidUsername("Username is not valid");
+      throw new InvalidUsernameFailure("Username is not valid");
     }
     return await this.repository.getGitHubUser(params);
   }
