@@ -7,7 +7,9 @@ export type GetGitHubUserDTO = {
 };
 
 export class GetGitHubUserUsecase {
-  constructor(private readonly repository: GetGitHubUserRepository) {}
+  constructor(
+    private readonly getGitHubUserRepository: GetGitHubUserRepository
+  ) {}
 
   async execute(params: GetGitHubUserDTO): Promise<GitHubUserEntity> {
     const { username } = params;
@@ -15,6 +17,6 @@ export class GetGitHubUserUsecase {
     if (!username) {
       throw new InvalidUsernameFailure("Username is not valid");
     }
-    return await this.repository.getGitHubUser(params);
+    return await this.getGitHubUserRepository.getGitHubUser(params);
   }
 }
