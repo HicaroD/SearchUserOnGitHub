@@ -1,3 +1,3 @@
 import { GitHubUserEntity } from "../../domain/entities";
 
-export type GitHubUserModel = GitHubUserEntity;
+export class GitHubUserModel extends GitHubUserEntity {}
