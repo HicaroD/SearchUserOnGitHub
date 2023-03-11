@@ -6,7 +6,7 @@ export type HttpResponse<T = any> = {
 export interface HttpClient {
   get(
     url: String,
-    headers?: Map<String, String>,
-    queryParameters?: Map<String, String>
+    headers?: Object,
+    queryParameters?: Object
   ): Promise<HttpResponse>;
 }

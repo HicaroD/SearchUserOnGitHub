@@ -9,8 +9,8 @@ export class AxiosHttpClient implements HttpClient {
 
   async get(
     url: string,
-    headers?: Map<String, String>,
-    queryParameters?: Map<String, String>
+    headers?: Object,
+    queryParameters?: Object
   ): Promise<HttpResponse> {
     const endpointUrl = `${this.baseUrl}${url}`;
     const requestData = {
